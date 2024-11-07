@@ -1,0 +1,149 @@
+/* Base Styles */
+.menu {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.menuTitle {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+/* Decorative underline effect */
+
+
+/* Responsive adjustments for title */
+@media (max-width: 768px) {
+  .menuTitle {
+      font-size: 2rem;
+      margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menuTitle {
+      font-size: 1.8rem;
+  }
+}
+
+/* Menu List Layout */
+.menuList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Adjust grid layout for smaller screens */
+@media (max-width: 768px) {
+  .menuList {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+      gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menuList {
+      grid-template-columns: 1fr; /* 1 column on small screens */
+      gap: 10px;
+  }
+}
+
+/* Menu Item Styling */
+.menuItem {
+  width: 100%;
+  max-width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-align: center;
+  padding: 20px 10px;
+  margin: 0 auto;
+}
+
+.menuItem:hover {
+  transform: scale(1.05);
+}
+
+.menuItem img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Item Title */
+.menuItem h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Item Description */
+.menuItem p {
+  font-size: 1rem; /* Adjusted for better readability */
+  color: #777;
+  margin-bottom: 10px;
+  margin-left: 40%;
+}
+
+/* Button Styling */
+.menuItem button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff4d4d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.menuItem button:hover {
+  background-color: #ff3333;
+}
+
+/* Responsive text sizing */
+@media (max-width: 768px) {
+  .menuItem h2 {
+      font-size: 1.3rem;
+  }
+  
+  .menuItem p {
+      font-size: 0.9rem;
+  }
+  
+  .menuItem button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menuItem h2 {
+      font-size: 1.2rem;
+  }
+  
+  .menuItem p {
+      font-size: 0.85rem;
+  }
+  
+  .menuItem button {
+      font-size: 0.85rem;
+      padding: 6px 12px;
+  }
+}

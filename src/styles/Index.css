@@ -1,0 +1,44 @@
+/* Home.css */
+.index {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    
+   
+  }
+  
+  
+  .headerContainer h1 {
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: rgb(249, 244, 244);
+  }
+  
+  .headerContainer p {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-style: italic;
+    color: rgb(243, 238, 238);
+  }
+  
+  .headerContainer button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(243, 238, 238);
+    background-color: #ff4d4d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .headerContainer button:hover {
+    background-color: #ff3333;
+    transform: scale(1.05);
+  }
+  

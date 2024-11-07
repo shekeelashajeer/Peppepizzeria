@@ -1,0 +1,73 @@
+/* Base Footer Styling */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+}
+
+/* Social Media Icons */
+.socialMedia {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+/* Icon Styling */
+.socialMedia svg {
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.socialMedia svg:hover {
+  color: #ff6f61; /* Highlight color on hover */
+}
+
+/* Footer Text */
+.footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Responsive Design */
+
+/* Medium Screen Adjustments */
+@media (max-width: 768px) {
+  .socialMedia {
+      gap: 12px;
+  }
+
+  .socialMedia svg {
+      font-size: 25px; /* Adjust icon size for smaller screens */
+  }
+
+  .footer p {
+      font-size: 13px;
+  }
+}
+
+/* Small Screen Adjustments */
+@media (max-width: 480px) {
+  .socialMedia {
+      gap: 10px;
+      margin-bottom: 8px;
+  }
+
+  .socialMedia svg {
+      font-size: 22px; /* Further reduce icon size */
+  }
+
+  .footer p {
+      font-size: 12px;
+      line-height: 1.4; /* Improve readability on small screens */
+      padding: 0 10px; /* Add padding to avoid text touching the edges */
+  }
+}

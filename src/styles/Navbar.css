@@ -1,0 +1,208 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    background-color: #222;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 120px;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  .navbar .leftSide {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .leftSide img {
+    width: 80px;
+    margin-left: 15px;
+  }
+  
+  .navbar .rightSide {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+    
+  }
+  
+  .navbar .rightSide a {
+    color: #f8f9fa;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .navbar .rightSide a:hover {
+    background-color: #444;
+    color: #00b4d8;
+  }
+  
+  /* Menu button (ReorderIcon) should be hidden by default */
+  .navbar .rightSide button {
+    display: none; /* Hide menu button on large screens */
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    align-items: center;
+  }
+  
+  /* Media Query for Tablet Screens */
+  @media (max-width: 768px) {
+    .navbar {
+      height: auto;
+      padding: 1rem;
+      
+    }
+  
+    .rightSide {
+      gap: 0.5rem;
+      margin-top: 1rem;
+      
+    }
+  
+    .navbar .rightSide a {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.8rem;
+    }
+  
+    /* On small screens, hide menu links and show menu button */
+    .navbar .rightSide a {
+      display: none; /* Hide links on small screens */
+    }
+  
+    .navbar .rightSide button {
+      display: inline-flex; /* Show the menu button */
+    }
+  }
+  
+  /* Media Query for Small Mobile Screens */
+  @media (max-width: 600px) {
+    .navbar {
+      height: auto;
+      
+    }
+  
+    .navbar .leftSide img {
+      width: 60px;
+      
+      margin-left: 15px;
+    }
+  
+    .rightSide {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+  
+    /* On small screens, hide menu links and show menu button */
+    .navbar .rightSide a {
+      display: none; /* Hide links on small screens */
+    }
+  
+    /* Show the ReorderIcon button */
+    .navbar .rightSide button {
+      display: inline-flex;
+    }
+  }
+  /* Default styling for hiddenLinks */
+/* Default styling for hiddenLinks */
+/* Default styling for hiddenLinks */
+/* Default styling for hiddenLinks */
+/* Default styling for hiddenLinks */
+.hiddenLinks {
+    display: none; /* Hidden by default */
+    flex-direction: row;
+    gap: 1rem;
+}
+
+/* Show hiddenLinks inside navbar when toggled */
+#open.hiddenLinks {
+    display: flex; /* Shows hiddenLinks when toggled */
+}
+
+/* Hide the logo when menu is open */
+.hideLogo {
+    display: none;
+}
+
+/* Style links in hiddenLinks */
+.hiddenLinks a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hiddenLinks a:hover {
+    background-color: #f0f0f0;
+    color: #ff6347;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    background-color: #222;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 96%;
+    height: 120px;
+    align-items: center;
+    padding: 0 2rem;
+    justify-content: space-between;
+}
+
+/* Logo styling */
+.navbar .leftSide img {
+    width: 120px;
+    padding-left: 15px;
+}
+
+/* rightSide contains default links and button */
+.navbar .rightSide {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Menu button (ReorderIcon) should be hidden by default */
+.navbar .rightSide button {
+    display: none; /* Hide on large screens */
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* Show hiddenLinks and button on smaller screens */
+@media (max-width: 768px) {
+    .navbar .rightSide a {
+        display: none; /* Hide links on small screens */
+    }
+
+    .navbar .rightSide button {
+        display: inline-flex; /* Show button */
+    }
+
+    #open.hiddenLinks {
+        display: flex; /* Show hiddenLinks when toggled */
+        flex-direction: row;
+        background-color: #222;
+        width: 100%;
+        padding: 1rem;
+        position: relative;
+    }
+
+    .hiddenLinks a {
+        color: #f8f9fa; /* Change color for better contrast */
+        padding: 0.5rem;
+    }
+}
+
